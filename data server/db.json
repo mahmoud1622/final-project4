@@ -1,0 +1,35 @@
+{
+  "employees": [
+    {
+      "name": "mohamed",
+      "position": "teacher English",
+      "id": 1
+    }
+  ],
+  "student": [
+    {
+      "name": "AboTraka",
+      "level": "one",
+      "id": 1,
+      "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhucfYid6yD9cfk9ijwhPy7nwMEErb4YHKuQ&usqp=CAU"
+    },
+    {
+      "name": "Ronaldinho",
+      "level": "five",
+      "id": 2,
+      "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdYP2ZWTiUNEhSGKwqgEcq63bWG71FWli-I9N2310fS-QecQhs9LmgS-52JvySIcTbRk0&usqp=CAU"
+    },
+    {
+      "name": "Messi",
+      "level": "two",
+      "id": 3,
+      "imgurl": "https://pbs.twimg.com/profile_images/1439604604656922629/qA86uljZ_400x400.jpg"
+    },
+    {
+      "imgurl": "https://pbs.twimg.com/media/E8ybOKjWUAU6X-P.jpg",
+      "level": "one",
+      "name": "Salah",
+      "id": 4
+    }
+  ]
+}
