@@ -1,0 +1,29 @@
+
+<h1 class="text-center text-info">Add Teachers Page</h1>
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+             <label>Teachers Name</label>
+                <input type="text" #empname='ngModel' required [(ngModel)]="object.name" placeholder="Enter Your Name" class="form-control"> 
+                <div *ngIf='empname.touched && empname.invalid' class="alert alert-danger">
+                    Please Enter Valid Name
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Teachers Position</label>
+                   <input type="text" #empposition='ngModel' required [(ngModel)]="object.position" placeholder="Enter Your Position" class="form-control"> 
+                   <div *ngIf="empposition.touched && empposition.invalid" class="alert alert-danger">
+                    Please Enter Valid Position
+                </div>
+               </div>
+               <div *ngIf="empname.valid && empposition.valid">
+                    <button (click)="save()" class="btn btn-info btn-block w-50 mx-auto">Send Data</button>
+               </div>
+               <div *ngIf="empname.invalid && empposition.invalid">
+                    <button disabled class="btn btn-info btn-block w-50 mx-auto">Send Data</button>
+            </div>
+              
+        </div>
+    </div>
+</div>

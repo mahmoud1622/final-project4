@@ -1,0 +1,34 @@
+<h1 class="text-center text-info">Add Student Page</h1>
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+             <label>Student Name</label>
+                <input type="text" #empname='ngModel' required [(ngModel)]="object.name" placeholder="Enter Your Name" class="form-control"> 
+                <div *ngIf='empname.touched && empname.invalid' class="alert alert-danger">
+                    Please Enter Valid Name
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Student Level</label>
+                   <input type="text" #emplevel='ngModel' required [(ngModel)]="object.level" placeholder="Enter Your level" class="form-control"> 
+                   <div *ngIf="emplevel.touched && emplevel.invalid" class="alert alert-danger">
+                    Please Enter Valid Level </div>
+               </div>
+               <div class="form-group">
+                <label>Student Img</label>
+                   <input type="url" #img='ngModel' required  [(ngModel)]="object.imgurl" placeholder="Enter Your img" class="form-control"> 
+                   <div *ngIf="img.touched && img.invalid" class="alert alert-danger">
+                    Please Enter Valid img </div>
+               </div>
+
+               <div *ngIf="empname.valid && emplevel.valid && img.valid">
+                    <button (click)="save()" class="btn btn-info btn-block w-50 mx-auto">Send Data</button>
+               </div>
+               <div *ngIf="empname.invalid && emplevel.invalid">
+                    <button disabled class="btn btn-info btn-block w-50 mx-auto">Send Data</button>
+            </div>
+              
+        </div>
+    </div>
+</div>
